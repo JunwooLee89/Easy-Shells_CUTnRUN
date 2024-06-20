@@ -20,7 +20,7 @@ printf "\nbigwig files: %s\n" "$bigwig_files"
 
 ### Run multiBigwigSummary
 multiBigwigSummary bins -b $bigwig_files -o ~/Desktop/GSE126612/correlation-comparison/bigwig_summary_bs500.npz -p 12 -bs 500
-multiBigwigSummary bins -b $bigwig_files -o ~/Desktop/GSE126612/correlation-comparison/bigwig_summary_bs1000.npz -p 12 -bs 2000
+multiBigwigSummary bins -b $bigwig_files -o ~/Desktop/GSE126612/correlation-comparison/bigwig_summary_bs2000.npz -p 12 -bs 2000
 multiBigwigSummary bins -b $bigwig_files -o ~/Desktop/GSE126612/correlation-comparison/bigwig_summary_bs5000.npz -p 12 -bs 5000
 multiBigwigSummary bins -b $bigwig_files -o ~/Desktop/GSE126612/correlation-comparison/bigwig_summary_bs10000.npz -p 12 -bs 10000
 
@@ -30,7 +30,7 @@ cd ~/Desktop/GSE126612/correlation-comparison
 ### Run plotCorrelation for bigwig_summary.npz
 plotCorrelation -in bigwig_summary_bs500.npz -c pearson -p heatmap -o plot_pearson_bigwig_summary_bs500.pdf -T "SRPMC normalized, bin 500, pearson" \
     --colorMap bwr --skipZeros --removeOutliers -min 0 -max 1 --plotNumbers --plotHeight 28.5 --plotWidth 33
-plotCorrelation -in bigwig_summary_bs1000.npz -c pearson -p heatmap -o plot_pearson_bigwig_summary_bs1000.pdf -T "SRPMC normalized, bin 2000, pearson" \
+plotCorrelation -in bigwig_summary_bs2000.npz -c pearson -p heatmap -o plot_pearson_bigwig_summary_bs2000.pdf -T "SRPMC normalized, bin 2000, pearson" \
     --colorMap bwr --skipZeros --removeOutliers -min 0 -max 1 --plotNumbers --plotHeight 28.5 --plotWidth 33
 plotCorrelation -in bigwig_summary_bs5000.npz -c pearson -p heatmap -o plot_pearson_bigwig_summary_bs5000.pdf -T "SRPMC normalized, bin 5000, pearson" \
     --colorMap bwr --skipZeros --removeOutliers -min 0 -max 1 --plotNumbers --plotHeight 28.5 --plotWidth 33
@@ -40,7 +40,7 @@ plotCorrelation -in bigwig_summary_bs10000.npz -c pearson -p heatmap -o plot_pea
 ### Run plotPCA for bigwig_summary.npz
 plotPCA -in bigwig_summary_bs500.npz -o plot_PCA_bigwig_summary_bs500.pdf -T "SRPMC normalized, bin 500" \
     --ntop 10000 --transpose --plotHeight 30 --plotWidth 32.5
-plotPCA -in bigwig_summary_bs1000.npz -o plot_PCA_bigwig_summary_bs1000.pdf -T "SRPMC normalized, bin 2000" \
+plotPCA -in bigwig_summary_bs2000.npz -o plot_PCA_bigwig_summary_bs2000.pdf -T "SRPMC normalized, bin 2000" \
     --ntop 10000 --transpose --plotHeight 30 --plotWidth 32.5
 plotPCA -in bigwig_summary_bs5000.npz -o plot_PCA_bigwig_summary_bs5000.pdf -T "SRPMC normalized, bin 5000" \
     --ntop 10000 --transpose --plotHeight 30 --plotWidth 32.5
@@ -60,7 +60,7 @@ printf "\nbigwig files: %s\n" "$bigwig_files"
 
 ### Run multiBigwigSummary
 multiBigwigSummary bins -b $bigwig_files -o ~/Desktop/GSE126612/correlation-comparison/subtracted_bigwig_summary_bs500.npz -p 12 -bs 500
-multiBigwigSummary bins -b $bigwig_files -o ~/Desktop/GSE126612/correlation-comparison/subtracted_bigwig_summary_bs1000.npz -p 12 -bs 2000
+multiBigwigSummary bins -b $bigwig_files -o ~/Desktop/GSE126612/correlation-comparison/subtracted_bigwig_summary_bs2000.npz -p 12 -bs 2000
 multiBigwigSummary bins -b $bigwig_files -o ~/Desktop/GSE126612/correlation-comparison/subtracted_bigwig_summary_bs5000.npz -p 12 -bs 5000
 multiBigwigSummary bins -b $bigwig_files -o ~/Desktop/GSE126612/correlation-comparison/subtracted_bigwig_summary_bs10000.npz -p 12 -bs 10000
 
@@ -70,7 +70,7 @@ cd ~/Desktop/GSE126612/correlation-comparison
 ### Run plotCorrelation for bigwig_summary.npz
 plotCorrelation -in subtracted_bigwig_summary_bs500.npz -c pearson -p heatmap -o plot_pearson_bigwig_summary_subracted_bs500.pdf -T "SRPMC normalized, subtracted, bin 500, pearson" \
     --colorMap bwr --skipZeros --removeOutliers -min 0 -max 1 --plotNumbers --plotHeight 28.5 --plotWidth 33
-plotCorrelation -in subtracted_bigwig_summary_bs1000.npz -c pearson -p heatmap -o plot_pearson_bigwig_summary_subracted_bs1000.pdf -T "SRPMC normalized, subtracted, bin 2000, pearson" \
+plotCorrelation -in subtracted_bigwig_summary_bs2000.npz -c pearson -p heatmap -o plot_pearson_bigwig_summary_subracted_bs2000.pdf -T "SRPMC normalized, subtracted, bin 2000, pearson" \
     --colorMap bwr --skipZeros --removeOutliers -min 0 -max 1 --plotNumbers --plotHeight 28.5 --plotWidth 33
 plotCorrelation -in subtracted_bigwig_summary_bs5000.npz -c pearson -p heatmap -o plot_pearson_bigwig_summary_subracted_bs5000.pdf -T "SRPMC normalized, subtracted, bin 5000, pearson" \
     --colorMap bwr --skipZeros --removeOutliers -min 0 -max 1 --plotNumbers --plotHeight 28.5 --plotWidth 33
@@ -80,7 +80,7 @@ plotCorrelation -in subtracted_bigwig_summary_bs10000.npz -c pearson -p heatmap 
 ### Run plotPCA for bigwig_summary.npz
 plotPCA -in subtracted_bigwig_summary_bs500.npz -o plot_PCA_bigwig_summary_subtracted_bs500.pdf -T "SRPMC normalized, subtracted, bin 500" \
     --ntop 10000 --transpose --plotHeight 30 --plotWidth 32.5
-plotPCA -in subtracted_bigwig_summary_bs1000.npz -o plot_PCA_bigwig_summary_subtracted_bs1000.pdf -T "SRPMC normalized, subtracted, bin 2000" \
+plotPCA -in subtracted_bigwig_summary_bs2000.npz -o plot_PCA_bigwig_summary_subtracted_bs2000.pdf -T "SRPMC normalized, subtracted, bin 2000" \
     --ntop 10000 --transpose --plotHeight 30 --plotWidth 32.5
 plotPCA -in subtracted_bigwig_summary_bs5000.npz -o plot_PCA_bigwig_summary_subtracted_bs5000.pdf -T "SRPMC normalized, subtracted, bin 5000" \
     --ntop 10000 --transpose --plotHeight 30 --plotWidth 32.5
