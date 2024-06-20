@@ -48,6 +48,9 @@ plotPCA -in bigwig_summary_bs10000.npz -o plot_PCA_bigwig_summary_bs10000.pdf -T
     --ntop 10000 --transpose --plotHeight 30 --plotWidth 32.5
 
 
+### Setting the bigwig folder as working directory
+cd ~/Desktop/GSE126612/bigwig # You can change the output directory to meet your needs
+
 ### for-loop to build the list of subtracted bigwig files 
 for bigwig_file in *_SRPMC.subtracted.bw; do
     bigwig_files="$bigwig_files $bigwig_file"
