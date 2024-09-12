@@ -11,12 +11,6 @@
     mkdir -p ~/Desktop/GSE126612/log/fastq  # Make folder to save log files which can be used to trace back downloading fastq files procedure
     mkdir -p ~/Desktop/GSE126612/fastq      # Make folder to download raw fastq files
 
-# Set the path of SRR_list
-    # This script uses "~/Desktop/Easy_Shells_CUTnRUN/SRR_list.txt" to address the list of fastq files to download.
-    # If you want to use this script to download other fastq files from GEO, please change the SRR numbers within this file.
-    # If you want to use Easy_Shells_CUTnRUN pipeline to analyze datasets which are alread existed in your system, just skip this step.
-    cd ~/Desktop/Easy_Shells_CUTnRUN/sample_info
-
 # Set the log directory and file names
     # you can change here to use this script to analyze your own dataset
     fastq_dir=~/Desktop/GSE126612/fastq
