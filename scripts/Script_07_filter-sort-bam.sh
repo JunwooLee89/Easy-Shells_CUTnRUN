@@ -44,7 +44,7 @@ for f in *.hg19.bam; do
 
         # file and directory names to log
         log_dir=~/Desktop/GSE126612/log/filter-sort-bam
-        log_file="sort-filtered-bam-log_${base}.txt"
+        log_file="filter-sort-bam-log_${base}.txt"
 
     # Set current working directory again
     cd $bam_dir
