@@ -1,3 +1,8 @@
+Date: 09.17.2024 (Tue)
+Title: One more change in Easy-Shells_CUTnRUN main!
+1. Now, Script_01_installation_***.sh are available to support installation for macOS, Ubuntu and CentOS! Since it's prelimiary installation helper shell script, you still need to install some programs seperately. If you need any help, please ask help to our issues page! (https://github.com/JunwooLee89/Easy-Shells_CUTnRUN/issues)
+
+
 These are the major changes of version 1.1.1 from version 1.0.0.
 
 1. Not only shell scripts, but also SRR list, chromosome sizes files, blacklist regions files, and canonical chromosomes information files are included within individual folders.
