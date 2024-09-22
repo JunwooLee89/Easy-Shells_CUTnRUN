@@ -79,7 +79,7 @@
         bedtools bamtobed \
           -bedpe \
           -i $bam_sort_by_query_actual \
-        > $bam_to_bed_dir/$bam_to_bed_actual\
+        > $bam_to_bed_dir/$bam_to_bed_actual
 
         # Filtering and creating fragments bed file
         awk '$1 !="." && $1==$4 && $6-$2 < 1000 {print $0}' \
