@@ -9,14 +9,14 @@
     # https://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#the-bowtie2-build-indexer
 ##########
 # Make bowtie2 index directory
-mkdir -p ~/Desktop/Easy_Shells_CUTnRUN/bowtie2-index
+mkdir -p ~/Desktop/Easy-Shells_CUTnRUN/bowtie2-index
 
 # Make bowtie2 index download log directory
 mkdir -p ~/Desktop/GSE126612/log
 mkdir -p ~/Desktop/GSE126612/log/bowtie2-index
 
 # Set directory names. you can change here to analyze your own dataset.
-index_dir=~/Desktop/Easy_Shells_CUTnRUN/bowtie2-index
+index_dir=~/Desktop/Easy-Shells_CUTnRUN/bowtie2-index
 
 url_actual="https://genome-idx.s3.amazonaws.com/bt/hg19.zip"
 output_actual="hg19.zip"
