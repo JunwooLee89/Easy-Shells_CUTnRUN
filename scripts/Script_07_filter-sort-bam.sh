@@ -30,7 +30,7 @@ for f in *.hg19.bam; do
         canonical_wo_blacklist_w_TArepeat="${base}.hg19.canonical.no-blacklist.at-TArepeat.bam"
 
         # file and directory names of bed files for filtration step
-        blacklist_dir=~/Desktop/Easy_Shells_CUTnRUN/blacklist
+        blacklist_dir=~/Desktop/Easy-Shells_CUTnRUN/blacklist
         canonical_chrom="hg19.canonical.chrom.bed"
         blacklist="hg19-blacklist.v2.bed"
         TA_repeats="hg19_TA_repeat.bed"
