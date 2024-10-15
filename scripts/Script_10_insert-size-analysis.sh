@@ -2,8 +2,7 @@
 
 ###########
 # Script_10_Insert size distribution analysis
-# This script was wrote to use picard.jar downloaded in "~/Document/program/picard" folder.
-# picard.jar download & usage: https://github.com/broadinstitute/picard / https://broadinstitute.github.io/picard/
+# Before to run, check the availability of picard in your system first
 ###########
 # Create directory to save insert size distribution analysis results and log files
   mkdir -p ~/Desktop/GSE126612/insert-size-distribution
@@ -33,9 +32,9 @@
     # Set current working directory again
     cd $bam_dir
 
-    # picard.jar CollectInsertSizeMetrics
+    # picard CollectInsertSizeMetrics
     (
-      java -jar ~/Documents/program/picard/build/libs/picard.jar CollectInsertSizeMetrics \
+      picard CollectInsertSizeMetrics \
         I=$input_bam \
         O=$output_dir/$output_matrics \
         H=$output_dir/$output_histogram \
