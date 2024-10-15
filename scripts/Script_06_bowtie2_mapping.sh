@@ -26,8 +26,8 @@ for f in *_1_val_1.fq; do
   read1="${base}_1_val_1.fq"
   read2="${base}_2_val_2.fq"
 
-  hg19_index=~/Desktop/Easy_Shells_CUTnRUN/bowtie2-index/hg19
-  R64_1_1_index=~/Desktop/Easy_Shells_CUTnRUN/bowtie2-index/R64-1-1
+  hg19_index=~/Desktop/Easy-Shells_CUTnRUN/bowtie2-index/hg19
+  R64_1_1_index=~/Desktop/Easy-Shells_CUTnRUN/bowtie2-index/R64-1-1
 
   bam_dir=~/Desktop/GSE126612/bowtie2-mapped
   hg19_bam="${base}.hg19.bam"
