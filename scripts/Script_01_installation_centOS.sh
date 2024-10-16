@@ -74,7 +74,7 @@
     wget https://github.com/FredHutch/SEACR/archive/refs/tags/v1.3.tar.gz
     tar -zxvf v1.3.tar.gz
     sudo mv SEACR-1.3 /usr/local/bin/SEACR
-    sudo chmod +x /usr/local/bin/SEACR/seacr.sh
+    sudo chmod +x /usr/local/bin/SEACR/SEACR_1.3.sh
 
 # Install Intervene
     echo "Installing Intervene..."
