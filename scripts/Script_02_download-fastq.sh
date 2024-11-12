@@ -33,8 +33,8 @@
     # Download accessions and fastq files
     {
         # Download accessions into current working directory without size limitation
-        prefetch --option-file $SRR_list_dir/$SRR_list --max-size u
+        prefetch --option-file $SRR_list --max-size u
 
         # Download fastq files
-        while IFS= read -r accession; do fasterq-dump "$accession"; done < $SRR_list_dir/$SRR_list
+        while IFS= read -r accession; do fasterq-dump "$accession"; done < $SRR_list
     } 2>$log_dir/$log_file
