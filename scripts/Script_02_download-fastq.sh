@@ -26,7 +26,8 @@
     vdb-config --prefetch-to-cwd
 
     # Record information of raw files
-    vdb-dump --option-file $SRR_list_dir/$SRR_list --info \
+    cd $SRR_list_dir
+    vdb-dump --option-file $SRR_list --info \
     > $log_dir/$SRR_list_info
 
     # Download accessions and fastq files
