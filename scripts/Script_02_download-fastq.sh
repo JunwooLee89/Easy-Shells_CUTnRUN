@@ -26,15 +26,15 @@
     vdb-config --prefetch-to-cwd
 
     # Record information of raw files
-    cd $SRR_list_dir
-    vdb-dump --option-file $SRR_list --info \
+    vdb-dump --option-file $SRR_list_dir/$SRR_list --info \
     > $log_dir/$SRR_list_info
 
     # Download accessions and fastq files
-    {
+    (
         # Download accessions into current working directory without size limitation
-        prefetch --option-file $SRR_list --max-size u
+        prefetch --option-file $SRR_list_dir/$SRR_list --max-size u.
 
         # Download fastq files
-        while IFS= read -r accession; do fasterq-dump "$accession"; done < $SRR_list
-    } 2>$log_dir/$log_file
+        while IFS= read -r accession; do fasterq-dump $accession; done < $SRR_list_dir/$SRR_list
+
+    ) 2>$log_dir/$log_file
