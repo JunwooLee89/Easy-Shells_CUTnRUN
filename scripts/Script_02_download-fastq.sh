@@ -13,10 +13,10 @@
 
 # Set the log directory and file names
     # you can change here to use this script to analyze your own dataset
-    fastq_dir=~/Desktop/GSE126612/fastq
-    SRR_list_dir=~/Desktop/Easy-Shells_CUTnRUN/sample_info
+    fastq_dir="$(realpath ~/Desktop/GSE126612/fastq)"
+    SRR_list_dir="$(realpath ~/Desktop/Easy-Shells_CUTnRUN/sample_info)"
     SRR_list="SRR_list.txt"
-    log_dir=~/Desktop/GSE126612/log/fastq
+    log_dir="$(realpath ~/Desktop/GSE126612/log/fastq)"
     SRR_list_info="SRR_list_info.txt"
     log_file="download-fastq_log.txt"
 
