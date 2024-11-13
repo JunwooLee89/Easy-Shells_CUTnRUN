@@ -72,10 +72,10 @@
         # Set files and directories for MACS2 and MACS3
         input_dir_MACS2=~/Desktop/GSE126612/MACS2
         input_dir_MACS3=~/Desktop/GSE126612/MACS3
-        input_wo_IgG_whole="${base}.hg19.canonical.clean.fragments_wo-IgG_peaks.xls"
-        input_w_IgG_whole="${base}.hg19.canonical.clean.fragments_w-IgG_peaks.xls"
-        input_wo_IgG_focused="${base}.hg19.canonical.clean.fragments_wo-IgG_summits.bed"
-        input_w_IgG_focused="${base}.hg19.canonical.clean.fragments_w-IgG_summits.bed"
+        input_wo_IgG_whole="${base}.hg19.canonical.clean.fragments_wo-IgG.txt_peaks.xls"
+        input_w_IgG_whole="${base}.hg19.canonical.clean.fragments_w-IgG.txt_peaks.xls"
+        input_wo_IgG_focused="${base}.hg19.canonical.clean.fragments_wo-IgG.txt_summits.bed"
+        input_w_IgG_focused="${base}.hg19.canonical.clean.fragments_w-IgG.txt_summits.bed"
 
         output_dir_MACS2=~/Desktop/GSE126612/peak-bed_MACS2
         output_dir_MACS3=~/Desktop/GSE126612/peak-bed_MACS3
