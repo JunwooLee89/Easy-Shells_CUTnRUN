@@ -48,7 +48,7 @@
       log_bam_to_bed_spike_in="bam-to-bed_log_${base}.R64-1-1.txt"
 
       # to create raw readcounts bedGraph files
-      chrom_sizes_dir=~/Desktop/Easy_Shells_CUTnRUN/chrom-sizes
+      chrom_sizes_dir=~/Desktop/Easy-Shells_CUTnRUN/chrom-sizes
       chrom_sizes="hg19.canonical.chrom.sizes"
 
       bedGraph_dir=~/Desktop/GSE126612/bedGraph
