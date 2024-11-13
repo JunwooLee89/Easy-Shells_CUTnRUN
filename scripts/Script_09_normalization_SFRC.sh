@@ -36,10 +36,10 @@
         cd $bedGraph_dir
     
         # Calculate the total readcount of a hg19_canonical.bedGraph file
-        total_readcount=$(awk '{print $4}' $raw_bedGraph | paste -sd+ | bc)
+        total_readcount=$(awk '{print $4}' $raw_bedGraph | paste -sd+ - | bc)
 
         # Calculate the hg19 genome size for canonical chromosome only
-        genome_size=$(awk '{print $2}' $chrom_sizes_dir/$chrom_sizes | paste -sd+ | bc)
+        genome_size=$(awk '{print $2}' $chrom_sizes_dir/$chrom_sizes | paste -sd+ - | bc)
 
         # Calculate the normalization factor
         ratio=$(echo "scale=10; $genome_size / $total_readcount" | bc)
