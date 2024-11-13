@@ -18,7 +18,7 @@ log_file="log_plotHeatmap_focused.txt"
 
 # for-loop to create Heatmap and average plot
 (
-    cd /home/junwoolee/Desktop/GSE126612/bigWig
+    cd ~/Desktop/GSE126612/bigWig
 
     for f in *.hg19.canonical.clean.fragments.SFRC.bw; do
 
@@ -33,7 +33,7 @@ log_file="log_plotHeatmap_focused.txt"
         computeMatrix reference-point \
             -S SRR8581615.hg19.canonical.clean.fragments.SFRC.bw \
             ${base}.hg19.canonical.clean.fragments.SFRC.bw \
-            -R /home/junwoolee/Desktop/GSE126612/peak-bed_MACS2/${base}.hg19.canonical.clean.fragments_w-IgG_focused.bed \
+            -R ~/Desktop/GSE126612/peak-bed_MACS2/${base}.hg19.canonical.clean.fragments_w-IgG_focused.bed \
             -o $computeMatrix_dir/${base}.hg19.canonical.clean.fragments_w-IgG_focused_MACS2_bw-SFRC.gz \
             -a 3000 -b 3000 -bs 10 --referencePoint center --missingDataAsZero --skipZeros -p max/2 \
             --samplesLabel IgG ${base}
@@ -46,7 +46,7 @@ log_file="log_plotHeatmap_focused.txt"
         computeMatrix reference-point \
             -S SRR8581615.hg19.canonical.clean.fragments.SRPMC.bw \
             ${base}.hg19.canonical.clean.fragments.SRPMC.bw \
-            -R /home/junwoolee/Desktop/GSE126612/peak-bed_MACS2/${base}.hg19.canonical.clean.fragments_w-IgG_focused.bed \
+            -R ~/Desktop/GSE126612/peak-bed_MACS2/${base}.hg19.canonical.clean.fragments_w-IgG_focused.bed \
             -o $computeMatrix_dir/${base}.hg19.canonical.clean.fragments_w-IgG_focused_MACS2_bw-SRPMC.gz \
             -a 3000 -b 3000 -bs 10 --referencePoint center --missingDataAsZero --skipZeros -p max/2 \
             --samplesLabel IgG ${base}
@@ -60,7 +60,7 @@ log_file="log_plotHeatmap_focused.txt"
         computeMatrix reference-point \
             -S SRR8581615.hg19.canonical.clean.fragments.SFRC.bw \
             ${base}.hg19.canonical.clean.fragments.SFRC.bw \
-            -R /home/junwoolee/Desktop/GSE126612/peak-bed-filtered_MACS2/${base}.hg19.canonical.clean.fragments_wo-IgG_focused.bed \
+            -R ~/Desktop/GSE126612/peak-bed-filtered_MACS2/${base}.hg19.canonical.clean.fragments_wo-IgG_focused.bed \
             -o $computeMatrix_dir/${base}.hg19.canonical.clean.fragments_wo-IgG_focused_MACS2_bw-SFRC.gz \
             -a 3000 -b 3000 -bs 10 --referencePoint center --missingDataAsZero --skipZeros -p max/2 \
             --samplesLabel IgG ${base}
@@ -73,7 +73,7 @@ log_file="log_plotHeatmap_focused.txt"
         computeMatrix reference-point \
             -S SRR8581615.hg19.canonical.clean.fragments.SRPMC.bw \
             ${base}.hg19.canonical.clean.fragments.SRPMC.bw \
-            -R /home/junwoolee/Desktop/GSE126612/peak-bed-filtered_MACS2/${base}.hg19.canonical.clean.fragments_wo-IgG_focused.bed \
+            -R ~/Desktop/GSE126612/peak-bed-filtered_MACS2/${base}.hg19.canonical.clean.fragments_wo-IgG_focused.bed \
             -o $computeMatrix_dir/${base}.hg19.canonical.clean.fragments_wo-IgG_focused_MACS2_bw-SRPMC.gz \
             -a 3000 -b 3000 -bs 10 --referencePoint center --missingDataAsZero --skipZeros -p max/2 \
             --samplesLabel IgG ${base}
@@ -88,7 +88,7 @@ log_file="log_plotHeatmap_focused.txt"
         computeMatrix reference-point \
             -S SRR8581615.hg19.canonical.clean.fragments.SFRC.bw \
             ${base}.hg19.canonical.clean.fragments.SFRC.bw \
-            -R /home/junwoolee/Desktop/GSE126612/peak-bed_MACS3/${base}.hg19.canonical.clean.fragments_w-IgG_focused.bed \
+            -R ~/Desktop/GSE126612/peak-bed_MACS3/${base}.hg19.canonical.clean.fragments_w-IgG_focused.bed \
             -o $computeMatrix_dir/${base}.hg19.canonical.clean.fragments_w-IgG_focused_MACS3_bw-SFRC.gz \
             -a 3000 -b 3000 -bs 10 --referencePoint center --missingDataAsZero --skipZeros -p max/2 \
             --samplesLabel IgG ${base}
@@ -101,7 +101,7 @@ log_file="log_plotHeatmap_focused.txt"
         computeMatrix reference-point \
             -S SRR8581615.hg19.canonical.clean.fragments.SRPMC.bw \
             ${base}.hg19.canonical.clean.fragments.SRPMC.bw \
-            -R /home/junwoolee/Desktop/GSE126612/peak-bed_MACS3/${base}.hg19.canonical.clean.fragments_w-IgG_focused.bed \
+            -R ~/Desktop/GSE126612/peak-bed_MACS3/${base}.hg19.canonical.clean.fragments_w-IgG_focused.bed \
             -o $computeMatrix_dir/${base}.hg19.canonical.clean.fragments_w-IgG_focused_MACS3_bw-SRPMC.gz \
             -a 3000 -b 3000 -bs 10 --referencePoint center --missingDataAsZero --skipZeros -p max/2 \
             --samplesLabel IgG ${base}
@@ -115,7 +115,7 @@ log_file="log_plotHeatmap_focused.txt"
         computeMatrix reference-point \
             -S SRR8581615.hg19.canonical.clean.fragments.SFRC.bw \
             ${base}.hg19.canonical.clean.fragments.SFRC.bw \
-            -R /home/junwoolee/Desktop/GSE126612/peak-bed-filtered_MACS3/${base}.hg19.canonical.clean.fragments_wo-IgG_focused.bed \
+            -R ~/Desktop/GSE126612/peak-bed-filtered_MACS3/${base}.hg19.canonical.clean.fragments_wo-IgG_focused.bed \
             -o $computeMatrix_dir/${base}.hg19.canonical.clean.fragments_wo-IgG_focused_MACS3_bw-SFRC.gz \
             -a 3000 -b 3000 -bs 10 --referencePoint center --missingDataAsZero --skipZeros -p max/2 \
             --samplesLabel IgG ${base}
@@ -128,7 +128,7 @@ log_file="log_plotHeatmap_focused.txt"
         computeMatrix reference-point \
             -S SRR8581615.hg19.canonical.clean.fragments.SRPMC.bw \
             ${base}.hg19.canonical.clean.fragments.SRPMC.bw \
-            -R /home/junwoolee/Desktop/GSE126612/peak-bed-filtered_MACS3/${base}.hg19.canonical.clean.fragments_wo-IgG_focused.bed \
+            -R ~/Desktop/GSE126612/peak-bed-filtered_MACS3/${base}.hg19.canonical.clean.fragments_wo-IgG_focused.bed \
             -o $computeMatrix_dir/${base}.hg19.canonical.clean.fragments_wo-IgG_focused_MACS3_bw-SRPMC.gz \
             -a 3000 -b 3000 -bs 10 --referencePoint center --missingDataAsZero --skipZeros -p max/2 \
             --samplesLabel IgG ${base}
@@ -143,7 +143,7 @@ log_file="log_plotHeatmap_focused.txt"
         computeMatrix reference-point \
             -S SRR8581615.hg19.canonical.clean.fragments.SFRC.bw \
             ${base}.hg19.canonical.clean.fragments.SFRC.bw \
-            -R /home/junwoolee/Desktop/GSE126612/peak-bed_SEACR/${base}.hg19.canonical.clean.fragments.SFRC_SEACR-w-IgG.stringent_focused.bed \
+            -R ~/Desktop/GSE126612/peak-bed_SEACR/${base}.hg19.canonical.clean.fragments.SFRC_SEACR-w-IgG.stringent_focused.bed \
             -o $computeMatrix_dir/${base}.hg19.canonical.clean.fragments.SFRC_SEACR-w-IgG.stringent_focused_bw-SFRC.gz \
             -a 3000 -b 3000 -bs 10 --referencePoint center --missingDataAsZero --skipZeros -p max/2 \
             --samplesLabel IgG ${base}
@@ -156,7 +156,7 @@ log_file="log_plotHeatmap_focused.txt"
         computeMatrix reference-point \
             -S SRR8581615.hg19.canonical.clean.fragments.SRPMC.bw \
             ${base}.hg19.canonical.clean.fragments.SRPMC.bw \
-            -R /home/junwoolee/Desktop/GSE126612/peak-bed_SEACR/${base}.hg19.canonical.clean.fragments.SRPMC_SEACR-w-IgG.stringent_focused.bed \
+            -R ~/Desktop/GSE126612/peak-bed_SEACR/${base}.hg19.canonical.clean.fragments.SRPMC_SEACR-w-IgG.stringent_focused.bed \
             -o $computeMatrix_dir/${base}.hg19.canonical.clean.fragments.SRPMC_SEACR-w-IgG.stringent_focused_bw-SRPMC.gz \
             -a 3000 -b 3000 -bs 10 --referencePoint center --missingDataAsZero --skipZeros -p max/2 \
             --samplesLabel IgG ${base}
@@ -171,7 +171,7 @@ log_file="log_plotHeatmap_focused.txt"
         computeMatrix reference-point \
             -S SRR8581615.hg19.canonical.clean.fragments.SFRC.bw \
             ${base}.hg19.canonical.clean.fragments.SFRC.bw \
-            -R /home/junwoolee/Desktop/GSE126612/peak-bed-filtered_SEACR/${base}.hg19.canonical.clean.fragments.SFRC_SEACR-wo-IgG.stringent_focused.bed \
+            -R ~/Desktop/GSE126612/peak-bed-filtered_SEACR/${base}.hg19.canonical.clean.fragments.SFRC_SEACR-wo-IgG.stringent_focused.bed \
             -o $computeMatrix_dir/${base}.hg19.canonical.clean.fragments.SFRC_SEACR-wo-IgG.stringent_focused_bw-SFRC.gz \
             -a 3000 -b 3000 -bs 10 --referencePoint center --missingDataAsZero --skipZeros -p max/2 \
             --samplesLabel IgG ${base}
@@ -184,7 +184,7 @@ log_file="log_plotHeatmap_focused.txt"
         computeMatrix reference-point \
             -S SRR8581615.hg19.canonical.clean.fragments.SRPMC.bw \
             ${base}.hg19.canonical.clean.fragments.SRPMC.bw \
-            -R /home/junwoolee/Desktop/GSE126612/peak-bed-filtered_SEACR/${base}.hg19.canonical.clean.fragments.SRPMC_SEACR-wo-IgG.stringent_focused.bed \
+            -R ~/Desktop/GSE126612/peak-bed-filtered_SEACR/${base}.hg19.canonical.clean.fragments.SRPMC_SEACR-wo-IgG.stringent_focused.bed \
             -o $computeMatrix_dir/${base}.hg19.canonical.clean.fragments.SRPMC_SEACR-wo-IgG.stringent_focused_bw-SRPMC.gz \
             -a 3000 -b 3000 -bs 10 --referencePoint center --missingDataAsZero --skipZeros -p max/2 \
             --samplesLabel IgG ${base}
