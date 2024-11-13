@@ -43,13 +43,13 @@
 
         # SEACR peak calling without IgG control, with norm
         (
-            ~/Documents/program/SEACR-1.3/SEACR_1.3.sh \
+            SEACR_1.3.sh \
                 $actual_sample_raw \
                 0.01 norm stringent \
                 $SEACR_dir/$output_raw_wo_IgG
         ) > $SEACR_log_dir/${output_raw_wo_IgG}.stringent.txt
         (
-            ~/Documents/program/SEACR-1.3/SEACR_1.3.sh \
+            SEACR_1.3.sh \
                 $actual_sample_raw \
                 0.01 norm relaxed \
                 $SEACR_dir/$output_raw_wo_IgG
@@ -57,13 +57,13 @@
 
         # SEACR peak calling without IgG control, without norm, SFRC
         (
-            ~/Documents/program/SEACR-1.3/SEACR_1.3.sh \
+            SEACR_1.3.sh \
                 $actual_sample_SFRC \
                 0.01 non stringent \
                 $SEACR_dir/$output_SFRC_wo_IgG
         ) > $SEACR_log_dir/${output_SFRC_wo_IgG}.stringent.txt
         (
-            ~/Documents/program/SEACR-1.3/SEACR_1.3.sh \
+            SEACR_1.3.sh \
                 $actual_sample_SFRC \
                 0.01 non relaxed \
                 $SEACR_dir/$output_SFRC_wo_IgG
@@ -71,13 +71,13 @@
 
         # SEACR peak calling without IgG control, without norm, SRPMC
         (
-            ~/Documents/program/SEACR-1.3/SEACR_1.3.sh \
+            SEACR_1.3.sh \
                 $actual_sample_SRPMC \
                 0.01 non stringent \
                 $SEACR_dir/$output_SRPMC_wo_IgG
         ) > $SEACR_log_dir/${output_SRPMC_wo_IgG}.stringent.txt
         (
-            ~/Documents/program/SEACR-1.3/SEACR_1.3.sh \
+            SEACR_1.3.sh \
                 $actual_sample_SRPMC \
                 0.01 non relaxed \
                 $SEACR_dir/$output_SRPMC_wo_IgG
@@ -85,14 +85,14 @@
 
         # SEACR peak calling with IgG control, with norm
         (
-            ~/Documents/program/SEACR-1.3/SEACR_1.3.sh \
+            SEACR_1.3.sh \
                 $actual_sample_raw \
                 $IgG_control_raw \
                 norm stringent \
                 $SEACR_dir/$output_raw_w_IgG
         ) > $SEACR_log_dir/${output_raw_w_IgG}.stringent.txt
         (
-            ~/Documents/program/SEACR-1.3/SEACR_1.3.sh \
+            SEACR_1.3.sh \
                 $actual_sample_raw \
                 $IgG_control_raw \
                 norm relaxed \
@@ -101,14 +101,14 @@
 
         # SEACR peak calling with IgG control, without norm, SFRC
         (
-            ~/Documents/program/SEACR-1.3/SEACR_1.3.sh \
+            SEACR_1.3.sh \
                 $actual_sample_SFRC \
                 $IgG_control_SFRC \
                 non stringent \
                 $SEACR_dir/$output_SFRC_w_IgG
         ) > $SEACR_log_dir/${output_SFRC_w_IgG}.stringent.txt
         (
-            ~/Documents/program/SEACR-1.3/SEACR_1.3.sh \
+            SEACR_1.3.sh \
                 $actual_sample_SFRC \
                 $IgG_control_SFRC \
                 non relaxed \
@@ -117,14 +117,14 @@
 
         # SEACR peak calling with IgG control, without norm, SRPMC
         (
-            ~/Documents/program/SEACR-1.3/SEACR_1.3.sh \
+            SEACR_1.3.sh \
                 $actual_sample_SRPMC \
                 $IgG_control_SRPMC \
                 non stringent \
                 $SEACR_dir/$output_SRPMC_w_IgG
         ) > $SEACR_log_dir/${output_SRPMC_w_IgG}.stringent.txt
         (
-            ~/Documents/program/SEACR-1.3/SEACR_1.3.sh \
+            SEACR_1.3.sh \
                 $actual_sample_SRPMC \
                 $IgG_control_SRPMC \
                 non relaxed \
