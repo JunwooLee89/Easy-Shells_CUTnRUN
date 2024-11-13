@@ -27,7 +27,7 @@
       control_spikein_bed="SRR8581615.R64-1-1.fragments.bed"
 
       # to create normalized readcounts bedGraph and bigWig files
-      chrom_sizes_dir=~/Desktop/Easy_Shells_CUTnRUN/chrom-sizes
+      chrom_sizes_dir=~/Desktop/Easy-Shells_CUTnRUN/chrom-sizes
       chrom_sizes="hg19.canonical.chrom.sizes"
 
       bedGraph_dir=~/Desktop/GSE126612/bedGraph
