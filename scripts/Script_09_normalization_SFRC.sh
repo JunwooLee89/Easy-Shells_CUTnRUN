@@ -20,7 +20,7 @@
         base=${f%%.hg19.canonical.clean.fragments.bedGraph}
 
         # Set the file names and directories
-        chrom_sizes_dir=~/Desktop/Easy_Shells_CUTnRUN/chrom-sizes
+        chrom_sizes_dir=~/Desktop/Easy-Shells_CUTnRUN/chrom-sizes
         chrom_sizes="hg19.canonical.chrom.sizes"
 
         bedGraph_dir=~/Desktop/GSE126612/bedGraph
