@@ -26,8 +26,8 @@
         actual_sample="${base}.hg19.canonical.clean.fragments.bed"
         IgG_control="SRR8581615.hg19.canonical.clean.fragments.bed"
         
-        output_wo_IgG="${base}.hg19.canonical.clean.fragments_wo-IgG"
-        output_w_IgG="${base}.hg19.canonical.clean.fragments_w-IgG"
+        output_wo_IgG="${base}.hg19.canonical.clean.fragments_wo-IgG.txt"
+        output_w_IgG="${base}.hg19.canonical.clean.fragments_w-IgG.txt"
 
         MACS2_dir=~/Desktop/GSE126612/MACS2
         MACS3_dir=~/Desktop/GSE126612/MACS3
