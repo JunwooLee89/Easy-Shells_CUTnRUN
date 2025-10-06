@@ -7,7 +7,7 @@ on:
 
 jobs:
   sync:
-    runs-on: self-hosted
+    runs-on: [self-hosted, macOS] # Add the macOS label here
 
     steps:
       - name: Checkout Source Repository
