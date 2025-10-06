@@ -16,4 +16,4 @@ jobs:
       - name: Push to Lab Repository
         run: |
           # Change the URL to point to your GitHub Enterprise server
-          git push --mirror https://${{ secrets.LAB_SYNC_PAT }}@github.mdanderson.org/MDACC-EMC-Ishak-lab/CI_JWL_Easy-Shells_CUTnRUN.git
+          git push --mirror https://${{ secrets.ISHAK_LAB_SYNC_EASY_SHELLS_CUTNRUN }}@github.mdanderson.org/MDACC-EMC-Ishak-lab/CI_JWL_Easy-Shells_CUTnRUN.git
