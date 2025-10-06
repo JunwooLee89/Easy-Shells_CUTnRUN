@@ -4,6 +4,7 @@ This webpage shares Easy Shells CUTnRUN, which is developed as introductory leve
 2. Introductory level CUT&RUN analysis pipeline which are written in single programming language (Shell Script) in step-by-step manner. This relatively simple structure analysis pipeline can be helpful for any bioinformatics beginners who want to learn and practice CUT&RUN analysis pipeline to build their own analysis pipeline and analyze CUT&RUN datasets for their research projects.
 ![Figure2](https://github.com/user-attachments/assets/028a1d0c-005e-44a0-b75a-9048b4757637)
 
+
 # How to site
 When you publish with any results produced through the Easy-Shells_CUTnRUN pipeline, please cite this article:
 
