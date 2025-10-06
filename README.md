@@ -9,3 +9,4 @@ This webpage shares Easy Shells CUTnRUN, which is developed as introductory leve
 When you publish with any results produced through the Easy-Shells_CUTnRUN pipeline, please cite this article:
 
 Lee, J., Chatterjee, B., Oh, N., Saha, D., Lu, Y., Bartholomew, B., Ishak, C. A. Introductory Analysis and Validation of CUT&RUN Sequencing Data. J. Vis. Exp. (214), e67359, doi:10.3791/67359 (2024).
+
